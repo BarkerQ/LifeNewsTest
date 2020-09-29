@@ -100,7 +100,6 @@ class LiveClientClass extends MainHelperClass
             // Формируем массив для записи
             $returnBlock = $this->jsonResourcesBlock->returnJson($block);
 
-            fprintf($writePost, $this->utf8Format());
             fputcsv($writePost, $returnBlock, ConstsClass::semicolon);
         }
     }
